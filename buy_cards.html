@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cashup gift , buy/sell gift cards">
+    <meta name="keywords" content="Gift Cards,Cashupgifts,Sell Giftcards,Buy Giftcards">
+    
+    <meta name="author" content="cashupgift.com">
+
+    <title>CashUpGift</title>
+    <link rel="icon" href="/img/favicon.png" sizes="16x16">
+
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="/css/sb-admin-2.css" rel="stylesheet">
+    
+    <link href="/owlcarousel/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+   <link href="/owlcarousel/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/owlcarousel/assets/css/style.css">
+     
+    <script src="/owlcarousel/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/owlcarousel/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+   
+
+    <script src="/owlcarousel/assets/js/carausol_slider.js"></script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+        <div class="sidebar-brand-icon">
+            <img src="/img/logo.png" alt="CashUpGift" style="height: 25%;width:75%;">
+        </div>
+    </a>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/buy_cards.html">
+            <i class="fas fa-search"></i>
+            <span>Buy Cards</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/view_gift_cards_bought.html">
+            <i class="fas fa-wallet"></i>
+            <span>My Wallet</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/buyer_disputes.html">
+            <i class="fas fa-exclamation"></i>
+            <span>Disputes</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/view_gift_cards.html">
+            <i class='fas fa-box'></i>
+            <span>My Inventory</span></a>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#block_sellers" aria-expanded="true" aria-controls="block_sellers">
+            <i class="fas fa-money-bill"></i>
+            <span>Fines</span>
+        </a>
+        <div id="block_sellers" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Fines:</h6>
+                <a class="collapse-item" href="/my_fines_paid.html">Paid</a>
+                <a class="collapse-item" href="/my_fines_unpaid.html">Unpaid</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+    <!-- Sidebar Toggle (Topbar) -->
+    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item mx-1">
+            <a class="nav-link" href="/change_password.html" role="button">
+                <i class="fas fa-key"></i>
+            </a>
+        </li>
+
+        <li class="nav-item mx-1">
+            <a class="nav-link" href="/buyers_sellers_login.html" role="button">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </li>
+
+    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form class="user" action="" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" name="category" id="category" placeholder="Enter Category" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Search by Category
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="user" action="" method="POST">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        From Price
+                                        <div class="form-group">
+                                            <input type="number" step="any" class="form-control form-control" name="from_price" id="from_price" required>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-6">
+                                        To Price
+                                        <div class="form-group">
+                                            <input type="number" step="any" class="form-control form-control" name="to_price" id="to_price" required>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Search by price
+                                    </button>
+                                </div> 
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="user" action="" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" name="category" id="category" placeholder="Enter Store" required>
+                                </div> 
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Search by Store
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-apparel-tab" data-toggle="pill" href="#v-pills-apparel" role="tab" aria-controls="v-pills-apparel" aria-selected="false" style="color: #f6c23e;">Apparel</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-automotive-tab" data-toggle="pill" href="#v-pills-automotive" role="tab" aria-controls="v-pills-automotive" aria-selected="false" style="color: #f6c23e;">Automotive</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-beauty-tab" data-toggle="pill" href="#v-pills-beauty" role="tab" aria-controls="v-pills-beauty" aria-selected="false" style="color: #f6c23e;">Beauty</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-books-tab" data-toggle="pill" href="#v-pills-books" role="tab" aria-controls="v-pills-books" aria-selected="false" style="color: #f6c23e;">Books</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-department_store-tab" data-toggle="pill" href="#v-pills-department_store" role="tab" aria-controls="v-pills-department_store" aria-selected="false" style="color: #f6c23e;">Department Store</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-electronics-tab" data-toggle="pill" href="#v-pills-electronics" role="tab" aria-controls="v-pills-electronics" aria-selected="false" style="color: #f6c23e;">Electronics</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-entertainment-tab" data-toggle="pill" href="#v-pills-entertainment" role="tab" aria-controls="v-pills-entertainment" aria-selected="false" style="color: #f6c23e;">Entertainment</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-foods_beverages-tab" data-toggle="pill" href="#v-pills-foods_beverages" role="tab" aria-controls="v-pills-foods_beverages" aria-selected="false" style="color: #f6c23e;">Foods & Beverages</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-health_wellness-tab" data-toggle="pill" href="#v-pills-health_wellness" role="tab" aria-controls="v-pills-health_wellness" aria-selected="false" style="color: #f6c23e;">Health & Wellness</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false" style="color: #f6c23e;">Home</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-home_garden-tab" data-toggle="pill" href="#v-pills-home_garden" role="tab" aria-controls="v-pills-home_garden" aria-selected="false" style="color: #f6c23e;">Home & Garden</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-jewelry_watches-tab" data-toggle="pill" href="#v-pills-jewelry_watches" role="tab" aria-controls="v-pills-jewelry_watches" aria-selected="false" style="color: #f6c23e;">Jewelry & Watches</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-kids-tab" data-toggle="pill" href="#v-pills-kids" role="tab" aria-controls="v-pills-kids" aria-selected="false" style="color: #f6c23e;">Kids</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-music-tab" data-toggle="pill" href="#v-pills-music" role="tab" aria-controls="v-pills-music" aria-selected="false" style="color: #f6c23e;">Music</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-office_supplies-tab" data-toggle="pill" href="#v-pills-office_supplies" role="tab" aria-controls="v-pills-office_supplies" aria-selected="false" style="color: #f6c23e;">Office Supplies</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-restaurant-tab" data-toggle="pill" href="#v-pills-restaurant" role="tab" aria-controls="v-pills-restaurant" aria-selected="false" style="color: #f6c23e;">Restaurant</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-services-tab" data-toggle="pill" href="#v-pills-services" role="tab" aria-controls="v-pills-services" aria-selected="false" style="color: #f6c23e;">Services</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-shoes-tab" data-toggle="pill" href="#v-pills-shoes" role="tab" aria-controls="v-pills-shoes" aria-selected="false" style="color: #f6c23e;">Shoes</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-sports_outdoors-tab" data-toggle="pill" href="#v-pills-sports_outdoors" role="tab" aria-controls="v-pills-sports_outdoors" aria-selected="false" style="color: #f6c23e;">Sports & Outdoors</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="v-pills-travel-tab" data-toggle="pill" href="#v-pills-travel" role="tab" aria-controls="v-pills-travel" aria-selected="false" style="color: #f6c23e;">Travel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                    
+                                <div class="tab-pane fade" id="v-pills-apparel" role="tabpanel" aria-labelledby="v-pills-apparel-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Apparel</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/apparel/abercrombie_&_Fitch_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Abercrombie & Fitch</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Adidas_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Adidas</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Aeropostale_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Aeropostale</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Ann_taylor_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Ann Taylor</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Anthropologie_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Anthropologie</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Athleta_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Athleta</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Banana_Republic_Gift_Crads/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Banana Republic</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Belk_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Belk</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Buid_a_bear_Workshop_gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Build a bear workshop</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Burlington_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Burlington</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Chico's_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Chico's</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Columbia_Sportswear_Company_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Columbia Sportswear Company</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Fanatics_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Fanatics</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Forever_21_Gift_Crds/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Forever 21</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Hollister_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Hollister</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/HomeGoods_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">HomeGoods</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/L.L.Bean_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">L.L.Bean</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Land's_End_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Land's End</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Lane_Bryant_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Lane Bryant</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Loft_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Loft</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Lululemon_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Lululemon</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Men's_Wharehouse_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Men's Wearhouse</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/MLB.com_Shop_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">MLB.com Shop</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/NBA_Store_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">NBA Store</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Neiman_Marcus_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Neiman Marcus</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Nordstrom_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Nordstrom</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Pacsun_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Pacsun</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/The_Children's_place_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">The Children's Place</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/apparel/Tory_Birch_Gift_Card/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Tory Birch</a></h6>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                <!-- our clients -->
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-automotive" role="tabpanel" aria-labelledby="v-pills-automotive-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Automotive</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/automotive/Autozone_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Autozone</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/automotive/Jiffy_Lube_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Jiffy Lube</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-beauty" role="tabpanel" aria-labelledby="v-pills-beauty-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Beauty</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/beauty/Origins_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Origins</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-books" role="tabpanel" aria-labelledby="v-pills-books-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Books</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/books/Barnes_&_Nobel_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Barnes & Nobel</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-department_store" role="tabpanel" aria-labelledby="v-pills-department_store-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Department Store</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/department_store/Amazon.com_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Amazon.com</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                    
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/department_store/Sam's_Club_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Sam's Club</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                    <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                        <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                <img src="./img/category_images/department_store/Target_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                            <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Target</a></h6>
+                                                                                
+                                                                        </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                    <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                        <div class="">
+                                                                                <div class="product-image3 hover15">
+                                                                                <img src="./img/category_images/department_store/Walmart_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                </div>
+                                                                            <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Walmart</a></h6>
+                                                                                
+                                                                        </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-electronics" role="tabpanel" aria-labelledby="v-pills-electronics-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Electronics</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/electronics/Apple_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Apple</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/electronics/Best_Buy_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Best Buy</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-entertainment" role="tabpanel" aria-labelledby="v-pills-entertainment-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Entertainment</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/entertainment/Disney_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Disney</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Fandango_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Fandango</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Gamestop_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Gamestop</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Hulu_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Hulu</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Movietickets.com_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Movietickets.com</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Netfilx_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Netflix</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/entertainment/Regal_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Regal</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-foods_beverages" role="tabpanel" aria-labelledby="v-pills-foods_beverages-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Foods & Beverages</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/food_and_beverages/Kroger_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Kroger</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/food_and_beverages/Panera_Bread_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Panera Bread</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-health_wellness" role="tabpanel" aria-labelledby="v-pills-health_wellness-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Health & Wellness</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/health_&_wellness/CVS_Pharmacy_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">CVS Pharmacy</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Home</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/home/At_Home_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">At Home</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/Bath_&_Body_Works_Gift_cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Bath & Body Works</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/Cracker_Barrel_Old_County_Store_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Cracker Barrel Old County Store</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/Ikea_(online_Only)_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Ikea</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/The_container_store_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">The Container Store</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/Wayfair_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Wayfair</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/West_Elm_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">West Elm</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home/Williams_Sonoma_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Williams Sonoma</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-home_garden" role="tabpanel" aria-labelledby="v-pills-home_garden-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Home & Garden</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/home_&_garden/Lowe's_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Lowe's</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/home_&_garden/The_Home_depot_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">The Home Depot</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-jewelry_watches" role="tabpanel" aria-labelledby="v-pills-jewelry_watches-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Jewelry & Watches</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/jewelry_and_watches/Kay_Jewelers_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Kay Jewelers</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/jewelry_and_watches/Zales_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Zales</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-kids" role="tabpanel" aria-labelledby="v-pills-kids-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top kids</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/kids/buybuy_baby_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">BuyBuyBaby</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-music" role="tabpanel" aria-labelledby="v-pills-music-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Music</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/music/Guitar_Center_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Guitar Center</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-office_supplies" role="tabpanel" aria-labelledby="v-pills-office_supplies-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Office Supplies</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/office_supplies/OfficeMax_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Office Max</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-restaurant" role="tabpanel" aria-labelledby="v-pills-restaurant-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Restaurant</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/restaurant/Applebee's_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Applebee's</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/BJ'S_Resataurant_and_Brewhouse_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">BJ's Restaurant and Brewhouse</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Boston_Market_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Boston Market</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Buca_di_Beppo_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Bucadi Beppo</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Buffalo_wild_wings_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Buffalo Wild Wings</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/chili's_grill_&_bar_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Chili's Grill & Bar</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Chipotle_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Chipotle</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Cold_stone_Creamery_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Cold Stone Creamery</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Dominos's_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Domino's</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/IHOP_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">IHOP</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Outback_Steak_House_GIft_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Outback Steak House</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/P.F.Chang's_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">P.F.Chang's</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Papa_John's_Pizza_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Papa John's Pizza</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Red_Robin_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Red Robin</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Ruby_Tuesday_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Ruby Tuesday</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Steak'n_Shake_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Steaks'n Shake</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/StubHub_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">StubHub</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Texas_Roadhouse_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Texas RoaddHouse</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/The_cheesecake_Factory_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">The Cheesecake Factory</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/restaurant/Uno_Chicago_Grill_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Uno Chicago Grill</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Services</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/services/DoorDash_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Doordash</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/services/Ebay_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Ebay</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/services/Grubhub_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Grubhub</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-shoes" role="tabpanel" aria-labelledby="v-pills-shoes-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Shoes</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/shoes/allen_Edmonds_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Allen Edmonds</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/shoes/Champs_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Champs</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/shoes/Famous_footwear_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Famous Footwear</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/shoes/Foot_Locker_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Foot Locker</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-sports_outdoors" role="tabpanel" aria-labelledby="v-pills-sports_outdoors-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Sports & Outdoors</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/sports_and_outdoors/Bass_Pro_Shops_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Bass Pro Shops</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/sports_and_outdoors/Cabela's_Gift_cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Cabela's</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/sports_and_outdoors/Dick's_sporting_goods_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Dick's Sporting Goods</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/sports_and_outdoors/REI_Gift_Cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">REI</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/sports_and_outdoors/TaylorMade_Golf_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">TaylorMade Golf</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-travel" role="tabpanel" aria-labelledby="v-pills-travel-tab">
+                                    <section class="carousel_se_02">
+                                        <div class="container-fluid py-5">
+                                             <div class="container  bg-light">
+                                                  <div class="row">
+                                                    <div class="col-sm-12 text-center wow fadeInUp">
+                                                        <br>
+                                                        <h2  style="color: #f6c23e;">Top Travel</h2>
+                                                    </div>
+                                                        <div class="col-md-12 px-4 pt-0">
+                                                                <div class="owl-carousel carousel_se_02_carousel owl-theme">
+
+                                                                    <div class="item">
+                                                                     <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                         <div class="">
+                                                                              <div class="product-image3 hover15">
+                                                                                 <img src="./img/category_images/travel/Airbnb_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                              </div>
+                                                                             <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Airbnb</a></h6>
+                                                                              
+                                                                        </div>
+                                                                      </div>
+                                                                      
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/travel/Delta_Airlines_Gift_cards/1.png" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Delta Airlines</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/travel/Royal_Caribbean_Gift_Cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Royal Caribbean</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+
+                                                                    <div class="item">
+                                                                        <div class="col-sm-12 p-2 wow fadeInUp delay-1">
+                                                                            <div class="">
+                                                                                 <div class="product-image3 hover15">
+                                                                                    <img src="./img/category_images/travel/Southwest_Airlines_Gift_cards/1.jpg" class="img-fluid pic-1" style="height:100px;width:100px;display:block;margin:auto;">
+                                                                                 </div>
+                                                                                <h6 class="mt-3" style="text-align:center;"><a href="" style="color: #f6c23e;">Southwest Airlines</a></h6>
+                                                                                 
+                                                                           </div>
+                                                                         </div>
+                                                                         
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                        </div>
+                                    
+                                                </div>
+                                    
+                                                
+                                             </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>                         
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary"><b>Seller Name : </b>John Smith</h6>
+                        </div>
+                        <div class="card-body">
+                            <b>Store Name : </b>Target GiftCard<br>
+                            <b>Gift Card Balance : </b>1300<br>
+                            <b>Discount : </b>10<br>
+                            <b>Selling Price : </b>1170<br>
+                            <b>Category : </b>Clothing<br>
+                            <a href="/buy_card.html" class="btn btn-primary btn-icon-split btn-lg">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                <span class="text">Buy</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; CashUpGift 2022</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
